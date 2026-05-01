@@ -1,0 +1,21 @@
+camera:
+  width: 640
+  height: 480
+  fps: 30
+
+detector:
+  # HSV 阈值，默认检测红色目标。实际项目中可根据目标颜色调整。
+  hsv_lower_1: [0, 80, 80]
+  hsv_upper_1: [10, 255, 255]
+  hsv_lower_2: [170, 80, 80]
+  hsv_upper_2: [180, 255, 255]
+  min_area: 200
+
+servo:
+  gain_x: 0.8
+  gain_y: 0.8
+  gain_z: 0.4
+  max_vx: 1.0
+  max_vy: 1.0
+  max_vz: 0.6
+  dead_zone: 0.02
